@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+}
+
+nav {
+  display: flex;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 3px 2px #f1f1f1;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.title {
+  /* gap: 16px; */
+  text-decoration: none;
+}
+
+.title h1 {
+  font-size: 2rem;
+  color: #0096c7;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.itens-menu {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #0096c7;
+  font-weight: 600;
+}
+
+.initial-page {
+  background: #f2f4ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.initial-image {
+  width: 600px;
+  height: 650px;
+}
+
+.about {
+  background: #f2f4ff;
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 3rem;
+}
+
+.div-about {
+  width: 50%;
+}
+
+.occupation-area {
+  background: #f2f4ff;
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 3rem;
+}
+
+.div-occupation-area {
+  width: 50%;
+}
+
+.therapy {
+  background: #f2f4ff;
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 3rem;
+}
+
+.div-therapy {
+  width: 50%;
+}
+
+.depositions {
+  background: #f2f4ff;
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 3rem;
+}
+
+.div-depositions {
+  width: 50%;
+}
+
+.h1-depositions {
+  text-align: center;
+}
+
+.contact {
+  background: #f2f4ff;
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 3rem;
+}
+
+.div-contact {
+  width: 50%;
+}
+
+.h1-contact {
+  text-align: center;
+}
+
+footer {
+  border-top: 1px solid #f1f1f1;
+  box-shadow: 0px -2px 3px #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+}
