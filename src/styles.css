@@ -193,29 +193,30 @@ a{
   text-align: center;
 }
 
-.social-media {
+/* .social-media {
   display: grid;
   height: 100%;
   width: 100%;
   place-items: center;
-}
+} */
 
 .social-media .button {
-  display: inline-block;
+  display: inline-flex;
   height: 60px;
   width: 59px;
-  /* margin: 0 5px; */
+  margin: 0 5px;
   overflow: hidden;
   background: #fff;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
+
 .social-media .button:hover {
   width: 200px;
 }
 
-.social-media .button .icon{
+.social-media .button:nth-child(1) .icon{
   display: inline-block;
   height: 60px;
   width: 60px;
@@ -229,15 +230,22 @@ a{
 }
 
 .social-media .button span{
+  display: none;
   font-size: 20px;
   font-weight: 700;
   line-height: 60px;
   margin-left: 10px;
+  transition: all 0.3s ease-out;
 }
 
 .social-media .button:nth-child(1) span{
   color: #4267B2;
 }
+
+.social-media .button:nth-child(1):hover span{
+  display: inline-block;
+}
+
 
 
 footer {
