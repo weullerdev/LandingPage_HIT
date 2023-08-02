@@ -179,9 +179,9 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f2f4ff;
+  background: linear-gradient(315deg, #fff 0%, #d7e1ec 74%); */
   width: 100%;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   padding: 3rem;
 }
 
@@ -198,15 +198,13 @@ a{
   height: 100%;
   width: 100%;
   place-items: center;
-  background: linear-gradient(315deg, #fff 0%, #d7e1ec 74%); */
 }
 
 .social-media .button {
-  display: inline-flex;
-  align-items: center;
+  display: inline-block;
   height: 60px;
   width: 59px;
-  margin: 0 5px;
+  /* margin: 0 5px; */
   overflow: hidden;
   background: #fff;
   border-radius: 50px;
@@ -221,10 +219,9 @@ a{
   display: inline-block;
   height: 60px;
   width: 60px;
-  text-align: center;
+  line-height: 60px;
   border-radius: 50px;
   box-sizing: border-box;
-  line-height: 60px;
   transition: all 0.3s ease-out;
 }
 .social-media .button:nth-child(1):hover .icon{
