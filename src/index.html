@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -8,16 +8,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <title>Psicólogo Hithielly</title>
 
-  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-  <header>
+  <!-- <header> -->
     <nav>
       <div class="title">
         <h1>
@@ -26,26 +28,35 @@
       </div>
       <div class="menu">
         <ul>
-          <li>
-            <a class="itens-menu" href="#about" id="nav-link">Sobre mim</a>
-          </li>
-          <li>
-            <a class="itens-menu" href="#occupation-area" id="nav-link">Área de atuação / Serviços</a>
-            <!-- Colocar Agendamento de sessão nessa parte-->
-          </li>
-          <li>
-            <a class="itens-menu" href="#therapy" id="nav-link">Benefícios da Terapia</a>
-          </li>
-          <li>
-            <a class="itens-menu" href="#depositions" id="nav-link">Depoimentos</a>
-          </li>
-          <li>
-            <a class="itens-menu" href="#contact" id="nav-link">Contato</a>
-          </li>
+          <a class="itens-menu" href="#about" id="nav-link">
+            <li>
+              Sobre mim
+            </li>
+          </a>
+          <a class="itens-menu" href="#occupation-area" id="nav-link">
+            <li>
+              Abordagem
+            </li>
+          </a>
+          <a class="itens-menu" href="#therapy" id="nav-link">
+            <li>
+              Benefícios da Terapia
+            </li>
+          </a>
+          <a class="itens-menu" href="#depositions" id="nav-link">
+            <li>
+              Depoimentos
+            </li>
+          </a>
+          <a class="itens-menu" href="#contact" id="nav-link">
+            <li>
+              Contato
+            </li>
+          </a>
         </ul>
       </div>
     </nav>
-  </header>
+  <!-- </header> -->
 
   <section class="initial-page">
     <div>
@@ -62,7 +73,7 @@
     <img class="initial-image" src="./assets/imagens/foto-perfil.png" alt="Psicólogo Hithielly Jhan da Costa Lima">
   </section>
 
-  <section class="about" id="about">
+  <section class="about section-content" id="about">
     <div class="div-about">
       <h1>
         <span> Sobre mim</span> <br />
@@ -81,7 +92,7 @@
     </div>
   </section>
 
-  <section class="occupation-area" id="occupation-area">
+  <section class="occupation-area section-content" id="occupation-area">
     <div class="div-occupation-area">
       <h1>
         <span> Psicologia Clínica</span> <br />
@@ -100,7 +111,7 @@
     </div>
   </section>
 
-  <section class="therapy" id="therapy">
+  <section class="therapy section-content" id="therapy">
     <div class="div-therapy">
       <h1>
         <span> Benefícios da Terapia</span> <br />
@@ -117,7 +128,7 @@
     </div>
   </section>
 
-  <section class="depositions" id="depositions">
+  <section class="depositions section-content" id="depositions">
     <div class="div-depositions">
       <h1 class="h1-depositions">
         <span> Depoimentos de pacientes</span> <br />
@@ -133,23 +144,50 @@
       </p>
     </div>
   </section>
-
-  <section class="contact" id="contact">
+  
+  <section class="contact section-content" id="contact">
     <div class="div-contact">
       <h1 class="h1-contact">
-        <span> Contato</span> <br />
+        <span>Contato</span>
       </h1>
-      <a class="title" href="https://www.instagram.com/psi.hithiellyjhan/" target="_blank">
-        <h1>Instagram</h1>
-      </a>
-      <a class="title" href="https://www.facebook.com/psi.hithiellyjhan/" target="_blank">
-        <h1>Facebook</h1>
-      </a>
+      <div class="social-media">
+        <a class="button" href="https://www.instagram.com/psi.hithiellyjhan/" target="_blank">
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <span>Facebook</span>
+        </a>
+      </div>
+      <!-- <a href="https://www.instagram.com/psi.hithiellyjhan/" class="fa fa-instagram"></a>
+      <a href="https://www.facebook.com/psi.hithiellyjhan/"  class="fa fa-facebook"></a> -->
     </div>
   </section>
 
   <footer>&copy;2023. Todos os direitos reservados</footer>
 
+
+  <script src="./script.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.title').on('click', function () {
+        var navHeight = 60;
+        var targetOffset = 0;
+        var originalScrollBehavior = $('html').css('scroll-behavior');
+
+        $('html').css('scroll-behavior', 'auto');
+
+        $('html, body').animate({ scrollTop: targetOffset }, 800, 
+          function () {
+            window.location.hash = '';
+            $('html').css('scroll-behavior', originalScrollBehavior);
+          }
+        );
+      });
+    });
+  </script>
 </body>
 
 </html>
+
+
+<!-- https://github.com/zouraiz523/Social-Media-Icons/blob/main/code/style.css -->
